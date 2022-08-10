@@ -1,0 +1,75 @@
+    
+   {
+    "jsonapi": {
+      "version": "1.0"
+    }
+  }
+   
+   POST /Get_oborudovanie HTTP/1.1
+   Content-Type: application/json
+   Accept: application/json
+   
+   {
+    "method": "post",
+    "number": "здесь или часть наименования оборудования или инвентарного номера"
+    }, 
+    
+    GET /defects HTTP/1.1
+    Content-Type: application/json
+    Accept: application/json
+   
+   {
+    "method": "get",
+    "defects": "вид дефекта"
+    }, 
+
+    POST /GetSotrudnik HTTP/1.1
+    Content-Type: application/json
+    Accept: application/json
+   
+   {
+    "method": "post",
+    "name": "фио"
+    }, 
+    
+    POST /insertDef HTTP/1.1
+    Content-Type: application/json
+    Accept: application/json
+    
+    {
+        "nameOborudovanie": "Машина листогибочная Sahinler RM 1550-90",
+        "vidDef": "Электрический",
+        "podrazdelenie": [
+          "Служба энергетика"
+        ],
+        "opisanie": "Тестовое описание дефекта",
+        "komment": "Тестовый комментарий дефекта",
+        "otvetstv": "659d0fac-a00b-11ea-8177-0cc47a594943",
+        "PK": "SA00",
+        "userPK": "lomanov_ds",
+        "Guid": "fcd38171-703b-11eb-8eb4-0cc47a594943"
+      }
+      
+
+
+    
+    
+    { 
+    "defects": "вид дефекта"
+    }, {
+    "name": "фио"
+    }, {
+        "nameOborudovanie": "Машина листогибочная Sahinler RM 1550-90",
+        "vidDef": "Электрический",
+        "podrazdelenie": [
+          "Служба энергетика"
+        ],
+        "opisanie": "Тестовое описание дефекта",
+        "komment": "Тестовый комментарий дефекта",
+        "otvetstv": "659d0fac-a00b-11ea-8177-0cc47a594943",
+        "PK": "SA00",
+        "userPK": "lomanov_ds",
+        "Guid": "fcd38171-703b-11eb-8eb4-0cc47a594943"
+      }
+    
+    
