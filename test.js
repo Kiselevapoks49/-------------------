@@ -1,4 +1,4 @@
-  var defects = document.getElementById('defects');
+  var defects = document.getElementById("defect1");
   
   function GetDefects() {
   
@@ -15,16 +15,29 @@
      if (xhr.readyState === 4) {
         console.log(xhr.status);
         console.log(xhr.responseText);
-        
-        myObj = [];
-        myObj = JSON.parse(xhr.responseText);
-              txt = "<select>"
-              for (xhr.responseText in myObj) {
-                   txt += "<option>" + myObj.name;
-              }
-              txt += "</select>" 
-              document.getElementById("defect").innerHTML = txt;
 
+        
+        document.getElementById('defect1').innerHTML;
+        var obj = JSON.parse(xhr.responseText);
+        let res = [];
+        for(var i in obj)
+
+        res.innerHTML += res.push(obj[i]);
+        res.innerHTML = "<option value>" + obj[i] + "</option>";
+        
+        document.getElementById('defect1').innerHTML = res.innerHTML;
+
+        
+
+
+        //const parse = JSON.parse(xhr.responseText); 
+       
+
+        //alert(res);
+
+        //document.getElementsByName("defect").values=txt;
+        
+       
     }};
     
    xhr.send();}
@@ -45,6 +58,17 @@
    if (xhr.readyState === 4) {
       console.log(xhr.status);
       console.log(xhr.responseText);
+
+
+      document.getElementById('nameOborudovanie').innerHTML;
+        var obj = JSON.parse(xhr.responseText);
+        var res = [];
+        for(var i in obj)
+
+        res.innerHTML = res.push(obj[i]);
+        res.innerHTML = "<option>" + res + "</option>";
+
+        document.getElementById('nameOborudovanie').innerHTML = res.innerHTML;
    }};
 
    var data = `{
